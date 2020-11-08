@@ -53,7 +53,7 @@
 						<div class="table-responsive">
 							<table class="table table-striped">
 								<tr>
-									<th>게시글 번호</th>
+									<th>게시글 번호	</th>
 									<th>제목</th>
 									<th>작성자아이디</th>
 									<th>작성일시</th>
@@ -75,7 +75,7 @@
 														<tr id="post" data-post_seq="${post.post_seq }">
 															<td>${post.post_seq }</td>
 <%-- 															<td>${post.post_title }</td> --%>
-															<td>${fn:replace(post.post_title, blank, "&nbsp") }</td>
+															<td>${fn:replace(post.post_title, blank, "&nbsp;") }</td>
 															<td>${post.userid }</td>
 															<td><fmt:formatDate value="${post.post_date }"
 																	pattern="YYYY-MM-dd" /></td>

@@ -40,7 +40,7 @@
 	  		FROM
 	  			(SELECT *
 	  			FROM 
-	  				(SELECT CONNECT_BY_ROOT(post_seq) post_gubun, post_seq, LPad(' ', (LEVEL-1)*4) || post_title as post_title, post_content, userid, post_date,board_name, post_status
+	  				(SELECT CONNECT_BY_ROOT(post_seq) post_gubun, post_seq, LPad('&#8627;', (LEVEL-1)*4) || post_title as post_title, post_content, userid, post_date,board_name, post_status
 	  				FROM POST
 	  				WHERE board_name = #{board_name}
 	  				START WITH post_parent is null
